@@ -6,9 +6,9 @@
 ## 配置属性
 
 | Key | Type | Default | Aside |
-|----|:----:|:----:|:----:|
+|----|:----:|:----:|----|
 | el | DOMNode | null | 容器节点 |
-| width　| number | 400 |　容器的宽度 ｜
+| width　| number | 400 |　容器的宽度 |
 | height| number | 300 | 容器的高度 |
 | rows | number | 2 | 行数。当autoRender为true时，生效。 |
 | cols | number | 2 | 列数。当autoRender为true时，生效。 |
