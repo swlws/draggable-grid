@@ -31,3 +31,41 @@
 | percent | number | 已缩放的比例 |
 
 # [Demo演示](https://codepen.io/swlws/pen/VwavYNb)
+
+```html
+<div id="drag-wrap-box">
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+```
+new DraggableBox({
+        el: document.getElementById('drag-wrap-box'),
+        width: 800,
+        height: 400,
+        allowDrag: true,
+        autoRender: false,
+        noOuterBorder: false,
+        itemMinWidth: 40,
+        itemMinHeight: 40,
+        itemBorderWidth: 1,
+        itemBorderColor: 'red',
+        itemMargin: 0,
+        itemWidthHeight:{
+            width:[10,10,10],
+            height:[10,10]
+        },
+        change: function(itemWidthHeight) {
+            console.log(this, itemWidthHeight)
+        }
+    });
+```js
+
+```
